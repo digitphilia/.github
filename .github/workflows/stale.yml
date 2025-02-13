@@ -1,0 +1,37 @@
+name: Stale Pull Requests (PRs) and Issues
+
+on:
+  schedule:
+    # https://crontab.cronhub.io/ - At 09:30 AM, on day 5 of the month
+    - cron: "30 9 5 * *"
+
+jobs:
+  stale:
+
+    runs-on: ubuntu-latest
+
+    permissions:
+      issues: write
+      pull-requests: write
+
+    steps:
+      - uses: actions/stale@v9
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+
+          # we do not want to add a stale label for labels under check
+          exempt-labels: "blocked,discussion,review"
+
+          # add the stale label, as configured; and add bot message
+          stale-label: "stale"
+          stale-message: >
+            This PR/Issue is _marked `stale` due to inactivity_ for a
+            prolonged period of inactivity. Please add a comment to this
+            message to update the stale label.
+          
+          # default configuration of idle timer, and closing
+          days-before-stale: 85
+          days-before-close: -1 # do not automatically close issue/prs
+
+          # override configurations for prs::
+          days-before-pr-stale: 30
