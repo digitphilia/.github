@@ -1,0 +1,32 @@
+name: ✨ An Epic Development
+description: Tracker for an Epic Development
+
+# define the title and assign the default lables, periodically review
+title: "[EPIC]: "
+labels: ["epic", "admin", "discussion", "triage"]
+
+body:
+  # provide brief description about the issue template
+  - type: markdown
+    attributes:
+      value: |
+        ✨ Thank you for creating an `EPIC` feature request. Please do add subsequent `STORY` which breaks the epic into smaller chunks.
+        The epic issue request may need ⚖ additional `admin` approval and documentation requirements.
+  
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe and Elaborate the Epic Request
+      description: Please elaborate the epic request and add subsequent story issue to track the changes.
+      value: "This is an Epic New Request!"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](../CODE_OF_CONDUCT.md)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
