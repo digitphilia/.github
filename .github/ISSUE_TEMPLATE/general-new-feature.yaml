@@ -1,0 +1,34 @@
+name: ✨ New Feature/Enhancement/Optimization
+description: Report a new feature or enhancement/optimization of existing features.
+
+# define the title and assign the default lables, periodically review
+title: "[New Feature]: "
+labels: ["enhancement", "triage"]
+
+body:
+  # provide brief description about the issue template
+  - type: markdown
+    attributes:
+      value: |
+        🌟 Thank you for taking your time ⌛ to create an awesome new feature or enhance/optimize an existing feature for the project!
+        Please describe ✍ the requirements and tentative usages. This form is generated using
+        [issue forms](https://docs.github.com/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository#creating-issue-forms).
+  
+  - type: textarea
+    id: description
+    attributes:
+      label: What is the New Feature/Enhancement/Optimization?
+      description: Please elaborate the new feature and/or enhancement required. Also, mark/suggest solutions.
+      placeholder: Tell us what new feature/enhancement/optimization/etc. is required.
+      value: "This could be a greate new addition!"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](../CODE_OF_CONDUCT.md)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
