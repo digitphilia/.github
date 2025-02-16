@@ -28,7 +28,12 @@ body:
       label: What happened?
       description: Please elaborate the bug, and also include *steps to reproduce*, *expected behaviour* and *solutions* (if any).
       placeholder: Tell us what you see!
-      value: "A bug happened!"
+      value: |
+        <div align = "justify">
+        
+        A bug happened!
+
+        </div>
     validations:
       required: true
 
