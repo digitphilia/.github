@@ -20,7 +20,12 @@ body:
       label: What is the New Feature/Enhancement/Optimization?
       description: Please elaborate the new feature and/or enhancement required. Also, mark/suggest solutions.
       placeholder: Tell us what new feature/enhancement/optimization/etc. is required.
-      value: "This could be a greate new addition!"
+      value: |
+        <div align = "justify">
+        
+        This could be a great new addition!
+
+        </div>
     validations:
       required: true
 
