@@ -18,7 +18,27 @@ body:
     attributes:
       label: Describe and Elaborate the Epic Request
       description: Please elaborate the epic request and add subsequent story issue to track the changes.
-      value: "This is an Epic New Request!"
+      value: |
+        <div align = "justify">
+        
+        **Overview:** Describe the epic new feature/requirement in a few lines.
+
+        ## 📜 Epic Details
+
+        Describe the contents of the epic, its tentative/planned story features, and
+        any other relevant details.
+
+        ### ✔ Epic Feature Checkmarks
+
+        Highlight important milestones and deliverables. In addition, highlight additional code
+        checks and feature requirements.
+
+        ## 🚀 Story Tracker
+
+        Track the progress of the underlying stories. GitHub provides a progress meter for all the assigned tasks under a
+        issues/pr thus makes it easier to track the progress of the epic.
+
+        </div>
     validations:
       required: true
 
