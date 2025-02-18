@@ -1,0 +1,47 @@
+name: ✨ Story Development Tracker
+description: Tracker for a Story Idea
+
+# define the title and assign the default lables, periodically review
+title: "[STORY]: "
+labels: ["story", "admin", "discussion", "triage"]
+
+body:
+  # provide brief description about the issue template
+  - type: markdown
+    attributes:
+      value: |
+        ✨ Thank you for adding a `STORY` requirement for an Epic.
+        The story issue request may need ⚖ additional `admin` approval and documentation requirements.
+  
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe and Elaborate the Story
+      description: Please elaborate the story request.
+      value: |
+        <div align = "justify">
+        
+        **Overview:** Describe the story feature/requirement in a few lines.
+
+        ## 📜 Story Details
+
+        Describe the contents of the story, its tentative/planned features, and
+        any other relevant details.
+
+        ### ✔ Story Feature Checkmarks
+
+        Highlight important milestones and deliverables. In addition, highlight additional code
+        checks and feature requirements.
+
+        </div>
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](../CODE_OF_CONDUCT.md)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
