@@ -35,6 +35,6 @@ is not applicable for the PR then do mention and close the same.
 
   - [ ] All code checks passed.
   - [ ] My code follows the [style guidelines](CONTRIBUTING.md) as mentioned.
-  - [ ] Add an entry in the latest `docs/source/whatsnew/____.md` file.
+  - [ ] Add an entry in the latest `docs/whatsnew/____.md` file.
   - [ ] Changes do not generate any `warnings` for existing functions (unless it is a breaking change).
   - [ ] Test case have been added to `___` (in case of fixing a bug or adding a new feature).
