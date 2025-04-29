@@ -3,7 +3,7 @@ description: Report a new feature or enhancement/optimization of existing featur
 
 # define the title and assign the default lables, periodically review
 title: "[New Feature]: "
-labels: ["enhancement", "triage"]
+labels: ["issue/enhancement", "issue/triage"]
 
 body:
   # provide brief description about the issue template
@@ -11,8 +11,7 @@ body:
     attributes:
       value: |
         🌟 Thank you for taking your time ⌛ to create an awesome new feature or enhance/optimize an existing feature for the project!
-        Please describe ✍ the requirements and tentative usages. This form is generated using
-        [issue forms](https://docs.github.com/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository#creating-issue-forms).
+        Please describe ✍ the requirements and tentative usages. This form is generated using issue forms.
   
   - type: textarea
     id: description
