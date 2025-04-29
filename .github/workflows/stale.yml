@@ -20,15 +20,19 @@ jobs:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
 
           # we do not want to add a stale label for labels under check
-          exempt-labels: "blocked,discussion,review"
+          exempt-labels: >
+            issue/admin,issue/blocker,issue/discussion,issue/triage,
+            pr/blocked,pr/review
 
           # add the stale label, as configured; and add bot message
-          stale-label: "stale"
+          pr-stale-label: "pr/mothballed"
+          issue-stale-label: "issue/stale"
+
           stale-message: >
-            This PR/Issue is _marked `stale` due to inactivity_ for a
-            prolonged period of inactivity. Please add a comment to this
-            message to update the stale label.
-          
+            This PR/Issue is _marked `stale` or `mothballed` due to
+            inactivity_ for a prolonged period. Please add a comment
+            to this message to update the stale/mothballed label.
+
           # default configuration of idle timer, and closing
           days-before-stale: 85
           days-before-close: -1 # do not automatically close issue/prs
