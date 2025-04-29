@@ -3,7 +3,7 @@ description: Report changes/addition/imporvement of documentation.
 
 # define the title and assign the default lables, periodically review
 title: "[Docs]: "
-labels: ["documentation", "triage", "semantics"]
+labels: ["issue/documentation", "issue/triage", "issue/semantics"]
 
 body:
   # provide brief description about the issue template
@@ -11,8 +11,7 @@ body:
     attributes:
       value: |
         🌟 Thank you for taking your time ⌛ to review or awesome existing documents!
-        Please describe ✍ the changes/enhancements to the existing documents or request for a new one. This form is generated using
-        [issue forms](https://docs.github.com/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository#creating-issue-forms).
+        Please describe ✍ the changes/enhancements to the existing documents or request for a new one. This form is generated using issue forms.
   
   - type: textarea
     id: description
@@ -23,8 +22,9 @@ body:
       value: |
         <div align = "justify">
         
-        Documentation is a serious business and is of utmost importance. If you expect a minor change - like spelling/typo/grammatical errors
-        then feel free to directly open a PR for the same instead of creating a new issue.
+        Documentation is a serious business and is of utmost importance. If you expect a minor change, then directly open a PR - like:
+          - spelling/typo mistake (does not alter the original text context),
+          - or, a grammatical error in the documentation.
 
         </div>
     validations:
