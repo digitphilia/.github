@@ -3,7 +3,7 @@ description: Tracker for a Story Idea
 
 # define the title and assign the default lables, periodically review
 title: "[STORY]: "
-labels: ["story", "admin", "discussion", "triage"]
+labels: ["issue/story", "issue/admin", "issue/triage"]
 
 body:
   # provide brief description about the issue template
