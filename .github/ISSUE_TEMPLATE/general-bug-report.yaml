@@ -3,15 +3,14 @@ description: Report a development bug or a bug on existing feature for tracking.
 
 # define the title and assign the default lables, periodically review
 title: "[Bug]: "
-labels: ["bug", "triage"]
+labels: ["issue/bug", "issue/triage"]
 
 body:
   # provide brief description about the issue template
   - type: markdown
     attributes:
       value: |
-        🌟 Thank you for taking your time ⌛ to file the 🐛 **bug report**. This template is generated using
-        [issue forms](https://docs.github.com/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository#creating-issue-forms).
+        🌟 Thank you for taking your time ⌛ to file the 🐛 **bug report**. This template is generated using issue forms.
   
   - type: input
     id: contact
@@ -48,8 +47,7 @@ body:
     attributes:
       label: Affected Code Version
       description: |
-        We are improving our product with each version release, and an bug in an older version may already
-        be resolved in the latest release.
+        A bug report should only be for the latest version of the code.
       options:
         - label: By submitting this bug, you accept that the bug is present in the latest version.
           required: true
