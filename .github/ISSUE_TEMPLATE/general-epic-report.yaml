@@ -3,7 +3,7 @@ description: Tracker for an Epic Development
 
 # define the title and assign the default lables, periodically review
 title: "[EPIC]: "
-labels: ["epic", "admin", "discussion", "triage"]
+labels: ["issue/epic", "issue/admin", "issue/triage"]
 
 body:
   # provide brief description about the issue template
